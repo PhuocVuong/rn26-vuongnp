@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        position: relative;
+        display: inline-block;
+        height: 50px;
+        border: 1px solid #000;
+      }
+
+      .xl {
+        width: 300px;
+      }
+      svg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid;
+        border-collapse: collapse;
+        padding: 5px;
+        position: relative;
+      }
+      table th:last-child {
+        background-image: linear-gradient(
+          to top left,
+          white 48%,
+          black,
+          white 52%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="xl">
+      <svg style="width: 100%; height: 100%">
+        <line
+          x1="0"
+          y1="0"
+          x2="100%"
+          y2="100%"
+          style="stroke: black; stroke-width: 1"
+        />
+      </svg>
+    </div>
+    <table>
+      <tbody>
+        <tr>
+          <th class="w20p">Thuộc tính</th>
+          <th class="w20p">giá trị</th>
+          <th class="w25p">Ví dụ</th>
+          <th style="padding: 0px"></th>
+        </tr>
+        <tr>
+          <td>
+            <a href="example/ex_animation_css3.php#anchor01" target="_blank"
+              >animation-name</a
+            >
+          </td>
+          <td>tên animation</td>
+          <td>animation-name: myAnimation;</td>
+          <td>Xác định tên cho một animation.</td>
+        </tr>
+        <tr>
+          <td><a href="example/ex_animation_css3.php#anchor02" target="_blank">animation-duration</a></td>
+          <td>thời gian</td>
+          <td>animation-duration: 5s;</td>
+          <td>Xác định thời gian để hoàn thành một chuyển động, mặc định là 0s.</td>
+      </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
