@@ -10,6 +10,13 @@
       rel="stylesheet"
     />
     <style>
+       .list-item {
+        border-bottom: 1px solid #ccc;
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+            padding: 10px;
+          }
       .container {
         height: 100%;
         align-content: center;
@@ -21,6 +28,52 @@
         border-radius: 50%;
         margin-bottom: 10px;
       }
+      
+      .item1{
+        background-color: red;
+        border-radius: 5px;
+        border: 2px solid none;
+        color: white;
+        padding: 0.1px;
+      }
+      .item2{
+        background-color: blue;
+        border-radius: 5px;
+        border: 2px solid none;
+        color: white;
+        padding: 0.1px;
+      }
+      .item3{
+        background-color: green;
+        border-radius: 5px;
+        border: 2px solid none;
+        color: white;
+        padding: 0.1px;
+      }
+      .item4{
+        background-color: yellow;
+        border-radius: 5px;
+        border: 2px solid none;
+        color: white;
+        padding: 0.1px;
+      }
+      .item5{
+        background-color: purple;
+        border-radius: 5px;
+        border: 2px solid none;
+        color: white;
+        padding: 0.1px;
+      }
+      .titlle{
+        
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #c3c3c3;
+            flex: 50%;
+        }
+
+      
+        
       
     </style>
   </head>
@@ -43,11 +96,11 @@
             </div>
             <div class="col">
                 <div class="row">
-                    <div1 class="col" style="color: white;">
-                        aaaaaaaaaa
+                    <div1 style="color: white; margin-bottom: 5px;">
+                        Joseph Max
                     </div1>
-                    <div1 class="col"style="color: white">
-                        aaaaa
+                    <div1 style="color: white; font-size: small; margin-bottom : 30px">
+                        Web Designer
                     </div1>
                 </div>
             </div>
@@ -55,19 +108,26 @@
           </div>
         </div>
       </div>
-      <div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">FOLLOWER
-        </li> 
-      </div>
-        <li class="list-group-item">FOLLOWINGS</li>
-        <li class="list-group-item">MESSAGES</li>
-        <li class="list-group-item">LIKES</li>
-        <li class="list-group-item">COMMENTS</li>
-      </ul>
-      
+      <div class="list-item">
+        <div class="tittle"> <strong> FOLLOWERS </strong></div>
+        <div class="item1">1,200</div>
     </div>
-    
+    <div class="list-item">
+      <div class="tittle"> <strong> FOLLOWINGS </strong></div>
+      <div class="item2">1,200</div>
+  </div>
+  <div class="list-item">
+    <div class="tittle"> <strong> MESSAGES </strong></div>
+    <div class="item3">1,200</div>
+</div>
+<div class="list-item">
+  <div class="tittle"> <strong> LIKES </strong></div>
+  <div class="item4">1,200</div>
+</div>
+<div class="list-item">
+  <div class="tittle"> <strong> COMMENTS </strong></div>
+  <div class="item5">1,200</div>
+</div>
    
 
     <script src="../../Examples/bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
