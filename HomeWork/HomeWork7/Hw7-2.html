@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form onsubmit="return false">
+      <label>Nhap 1 so bat ki :</label>
+      <input type="number" id="input__number" />
+      <button onclick="HandleNumber()">Day so Fibo</button>
+      <script>
+        function HandleNumber() {
+          let a = 0;
+          let b = 1;
+          let c = 0;
+          let ValueNumber = document.getElementById("input__number");
+          console.log(ValueNumber.value);
+          for (; c <= ValueNumber.value; ) {
+            document.writeln(c)
+            a = b
+            b = c
+            c = a + b
+            
+          }
+        }
+      </script>
+    </form>
+  </body>
+</html>

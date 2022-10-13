@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .navigation {
+        text-align: right;
+        justify-content: space-between;
+      }
+      .navigation a:hover {
+        background-color: yellow;
+        color: red;
+      }
+      .p4 {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      .container {
+        padding: 25px;
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul class="navigation" style="color: white">
+        <a href="./Ex1.html" style="padding: 15px">Home</a>
+        <a href="./UserList.html" style="padding: 15px">User List</a>
+        <a href="./UserForm.html" style="padding: 15px">User Form</a>
+      </ul>
+    </div>
+    <form onsubmit="return false">
+      <label>Email</label><br />
+      <input
+        type="email"
+        placeholder="Enter your email"
+        id="input__email"
+      /><br />
+      <label>PassWord</label><br />
+      <input
+        type="password"
+        placeholder="Your Password"
+        id="input__password"
+      /><br />
+      <button onclick="HandleSubmit()">Submit</button>
+      <button onclick="HandleReset()">Reset</button>
+    </form>
+    <script>
+      const email = "admin";
+      const password = "admin";
+      function HandleSubmit() {
+        let valueemail = document.getElementById("input__email");
+        console.log("ElmEmail:", valueemail.value);
+        let valuepassword = document.getElementById("input__password");
+        console.log("ElmPassword:", valuepassword.value);
+        if (email === valueemail.value && password === valuepassword.value) {
+          alert("Success");
+        } else {
+          alert("Fail");
+          
+        }
+      }
+      function HandleReset() {
+        let valueemail = document.getElementById("input__email");
+        
+        let valuepassword = document.getElementById("input__password");
+        
+        valueemail.value = ''
+        valuepassword.value = ''
+        
+      }
+    </script>
+
+    <div class="p4">
+      <p style="padding: 30px; background-color: bisque; margin-top: 15px">
+        This web page is a part of a demonstration of fluid web design made by
+        www.w3schools.com. Resize the browser window to see the content response
+        to the resizing.
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .navigation {
+        text-align: right;
+        justify-content: space-between;
+      }
+      .navigation a:hover {
+        background-color: yellow;
+        color: red;
+      }
+
+      table,
+      th,
+      td {
+       
+        border-collapse: collapse;
+        padding: 20px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        
+        text-align: left;
+      }
+      .btn {
+        background: green;
+        border-radius: 5px;
+      }
+      .btn2 {
+        background: red;
+        border-radius: 5px;
+      }
+      tr {
+        background-color: black;
+        color: white;
+      }
+      tr:nth-child(even) {
+        background-color: rgba(0, 0, 0, 0.363);
+      }
+      .p2{
+        height: 500px;
+        width: 100%;
+        padding-top: au;
+      }
+      .p4{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul class="navigation" style="color: white">
+        <a href="./Ex1.html" style="padding: 15px">Home</a>
+        <a href="./UserList.html" style="padding: 15px">User List</a>
+        <a href="./UserForm.html" style="padding: 15px">User Form</a>
+      </ul>
+    </div>
+    <div class="p2">
+      <table>
+        <tbody>
+          <tr>
+            <th class="w20p">#</th>
+            <th class="w20p">First</th>
+            <th class="w25p">Last</th>
+            <th class="w25p">Handle</th>
+            <th class="w25p"></th>
+          </tr>
+          <tr>
+            <th class="w20p">1</th>
+            <th class="w20p">Mark</th>
+            <th class="w25p">Otto</th>
+            <th class="w25p">@mdo</th>
+            <th class="w25p">
+              <button class="btn">Detail</button>
+              <span><button class="btn2">Delete</button></span>
+            </th>
+          </tr>
+          <tr>
+            <th class="w20p">2</th>
+            <th class="w20p">Jacob</th>
+            <th class="w25p">Thornton</th>
+            <th class="w25p">@fat</th>
+            <th class="w25p">
+              <button class="btn">Detail</button>
+              <span><button class="btn2">Delete</button></span>
+            </th>
+          </tr>
+          <tr>
+            <th class="w20p">3</th>
+            <th class="w20p">Larry The Bird</th>
+            <th class="w25p"></th>
+            <th class="w25p">@twitter</th>
+            <th class="w25p">
+              <button class="btn">Detail</button>
+              <span><button class="btn2">Delete</button></span>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="p4">
+      <p style="padding: 30px; background-color: bisque; margin-top: 15px; text-align: center;">
+        This web page is a part of a demonstration of fluid web design made by
+        www.w3schools.com. Resize the browser window to see the content response
+        to the resizing.
+      </p>
+    </div>
+  </body>
+</html>

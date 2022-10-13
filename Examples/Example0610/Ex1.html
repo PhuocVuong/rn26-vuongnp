@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="../bootstrap-4.6.2-dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .navigation {
+        text-align: right;
+        justify-content: space-between;
+        text-decoration:none ;
+        
+      }
+      .navigation a:hover {
+        background-color: yellow;
+        color: red;
+      }
+      .item {
+        border-bottom: 1px solid #ccc;
+        padding: 15px;
+        transition: width 1s;
+        background-color: rgb(225, 238, 170);
+      }
+
+      .item {
+        transition-timing-function: ease-out;
+      }
+
+      img {
+        width: 900px;
+        height: 700px;
+      }
+      .p4 {
+        text-align: center;
+        font-size: 12px;
+      }
+      .p3 {
+        height: 300px;
+      }
+      .drive:hover {
+        width: 200px;
+      }
+      .walk:hover {
+        width: 200px;
+      }
+      .p4{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div >
+      <ul class="navigation" style="color: white;">
+        <a href="./Ex1.html" style="padding: 15px;">Home</a>
+        <a href="./UserList.html" style="padding: 15px;">User List</a>
+        <a href="./UserForm.html" style="padding: 15px;">User Form</a>
+      </ul>
+    </div>
+
+    <div class="row">
+      <div class="col-3 menu">
+        <div class="item drive">The Drive</div>
+        <div class="item walk">The Walk</div>
+        <div class="item">The Return</div>
+        <div class="item">The End</div>
+      </div>
+      <div class="col-6 p2">
+        <h2>The Walk</h2>
+        <p>
+          The walk to the Pulpit Rock will take you approximately two hours,
+          give or take an hour depending on the weather conditions and your
+          physical shape.
+        </p>
+        <img
+          src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
+          alt=""
+        />
+      </div>
+      <div class="col-3 p3 bg-secondary">
+        <h3>What?</h3>
+        <p>The Pulpit Rock is a part of a mountain that looks like a pulpit.</p>
+        <h3>Where?</h3>
+        <p>The Pulpit Rock is in Norway</p>
+        <h3>Price?</h3>
+        <p>The walk is free!</p>
+      </div>
+    </div>
+    <div class="p4">
+      <p style="padding: 30px; background-color: bisque; margin-top: 15px">
+        This web page is a part of a demonstration of fluid web design made by
+        www.w3schools.com. Resize the browser window to see the content response
+        to the resizing.
+      </p>
+    </div>
+    <script src="../bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

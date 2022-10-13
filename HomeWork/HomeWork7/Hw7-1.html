@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return false">
+    <label>Nhập một số bất kì : </label>
+    <input type="number" id="input__number"><br>
+    <button onclick="HandleCheck()"> Kiểm tra</button>
+    <script>
+        function HandleCheck() {
+            let check = document.getElementById("input__number")
+            console.log(check.value)
+            if (check.value % 2 == 0) {
+                alert('Đây là số chẵn')
+                
+            } else {
+                alert ('Đây là số lẻ')
+                
+            }
+        }
+    </script>
+
+</form>
+</body>
+</html>
